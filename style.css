@@ -1,0 +1,259 @@
+/*header*/
+#Logo{
+    font-family: 'Satisfy',cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: #44c0c2;
+    line-height: 100px;
+}
+
+
+nav#menü ul{
+      list-style-type: none;
+      text-decoration: none;
+}
+nav#menü ul li{
+    display: inline-block;
+    line-height: 100px;
+    padding: 0px 10px;
+    
+}
+nav#menü ul li a{
+    color: darkslateblue;
+    text-decoration: none;
+
+}
+nav#menü ul li.active{
+    background-color: #ddd;
+    border-bottom:5px solid #44c0c2;
+
+}
+nav#menü ul li.active a{
+    color: #44c0c2;
+}
+
+/* slider */
+
+
+/* Services*/
+section#services{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section#services .yuvarlak{
+    height: 100px;
+    width: 100px;
+    border:4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+   
+}
+section#services .yuvarlak i{
+    line-height: 100px;
+    color: #44c0c2;
+    
+}
+
+section#services .daire{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+section#services .daire i{
+   line-height: 100px;
+   color: #44c0c2;
+}
+section#services .dairemsi{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+section#services .dairemsi i{
+    line-height: 100px;
+   color: #44c0c2;
+}
+section#services .yuvarlagimsi{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section#services .yuvarlagimsi i{
+    line-height: 100px;
+   color: #44c0c2;
+}
+section#services a{
+    background-color: #44c0c2;
+}
+/* pricing */
+section#pricing{
+    background-color:  #f1f1f1;
+}
+section#pricing ul li{
+    
+}
+section#pricing .usttablo{
+    background-color: darkslategray;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .griiki{
+    background-color: #44c0c2;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .gri{
+    background-color: darkslategray;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .ikinci{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    
+}
+section#pricing .iki{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+section#pricing .ozan{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+}
+section#pricing .ozan1{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+}
+section#pricing .ozan0{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+
+}
+section#portfolio{
+    background-color: #ddd;
+}
+section#portfolio .h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+/* mobile css */
+header#mobileMenu{
+    display: none;
+   
+}
+header#desktopMenu{
+    display: block;
+}
+header#mobileMenu nav{
+    z-index: 99999999!important;
+}
+
+@media only screen and (max-width: 768px){
+    header#desktopMenu{
+        display: none;
+    }
+    header#mobileMenu{
+        display: block;
+    }
+}
+section#popüler{
+    background-color: #ddd;
+}
+section#popüler .foto1{
+    width: 300px;
+}
+section#popüler .foto2{
+    width: 300px;
+}
+section#haberler .foto1{
+    width: 400px;
+}
+section#haberler .foto2{
+    width: 400px;
+}
+section#popüler .foto3{
+    width: 300px;
+}
+section#haberler .foto3{
+    width: 400px;
+}
+section#popüler .ozan1{
+    text-decoration: none;
+}
+section#popüler .ozan2{
+    text-decoration: none;
+}
+section#popüler .ozan3{
+    text-decoration: none;
+}
+section#popüler .foto4{
+    width: 300px;
+}
+nav#menü .ara{
+    height: 30px;
+}
+
+section#popüler{
+    background-color: gray;
+}
+table#table1{
+    background-color: #f1f1f1;
+}
+/*GİRİŞ*/ 
+@import "compass/css3";
+
+section#elektronik.kapsayici:hover img{
+transform: scale(1,3);
+
+}

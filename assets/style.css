@@ -1,0 +1,273 @@
+/*header*/
+#Logo{
+    font-family: 'Satisfy',cursive;
+    font-size: 40px;
+    text-decoration: none;
+    color: #44c0c2;
+    line-height: 100px;
+}
+
+
+nav#menü ul{
+      list-style-type: none;
+      text-decoration: none;
+}
+nav#menü ul li{
+    display: inline-block;
+    line-height: 100px;
+    padding: 0px 10px;
+    
+}
+nav#menü ul li a{
+    color: darkslateblue;
+    text-decoration: none;
+
+}
+nav#menü ul li.active{
+    background-color: #ddd;
+    border-bottom:5px solid #44c0c2;
+
+}
+nav#menü ul li.active a{
+    color: #44c0c2;
+}
+
+/* slider*/
+section#slider{
+    background-image: url(../img/DALL·E\ 2022-12-12\ 20.38.25\ -\ a\ great\ sunset.png);
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #44c0c2;
+    color: #fff;
+    position: relative;
+}
+.Learnbtn{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+   
+    
+}
+section#slider #sliderP{
+    font-weight: border;
+
+}
+section#slider #slidercontent{
+    padding-top: 150px;
+}
+section#slider h1{
+    font-size: 60px ;
+}
+
+.Learnbtn:hover{
+    background-color: #fff;
+    color: darkslategray;
+    transition: all 1s;
+}
+
+section#slider .solicon{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    color: darkslategray;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+section#slider .sagicon{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    color: darkslategray;
+    border-radius: 50px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+
+/* Services*/
+section#services{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section#services .yuvarlak{
+    height: 100px;
+    width: 100px;
+    border:4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+   
+}
+section#services .yuvarlak i{
+    line-height: 100px;
+    color: #44c0c2;
+    
+}
+
+section#services .daire{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+section#services .daire i{
+   line-height: 100px;
+   color: #44c0c2;
+}
+section#services .dairemsi{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+section#services .dairemsi i{
+    line-height: 100px;
+   color: #44c0c2;
+}
+section#services .yuvarlagimsi{
+    height: 100px;
+    width: 100px;
+    border: 4px solid #44c0c2;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section#services .yuvarlagimsi i{
+    line-height: 100px;
+   color: #44c0c2;
+}
+section#services a{
+    background-color: #44c0c2;
+}
+/* pricing */
+section#pricing{
+    background-color:  #f1f1f1;
+}
+section#pricing ul li{
+    
+}
+section#pricing .usttablo{
+    background-color: darkslategray;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .griiki{
+    background-color: #44c0c2;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .gri{
+    background-color: darkslategray;
+    height: 80px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0;
+}
+section#pricing .ikinci{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    
+}
+section#pricing .iki{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+section#pricing .ozan{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+}
+section#pricing .ozan1{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+}
+section#pricing .ozan0{
+    background-color: #ddd;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    line-height: 60px;
+
+}
+section#portfolio{
+    background-color: #ddd;
+}
+section#portfolio .h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+/* mobile css */
+header#mobileMenu{
+    display: none;
+   
+}
+header#desktopMenu{
+    display: block;
+}
+header#mobileMenu nav{
+    z-index: 99999999!important;
+}
+
+@media only screen and (max-width: 768px){
+    header#desktopMenu{
+        display: none;
+    }
+    header#mobileMenu{
+        display: block;
+    }
+}

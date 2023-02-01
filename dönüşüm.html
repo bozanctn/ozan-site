@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pahalı dönüşüm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 60px; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #f1f1f1; 
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div id="YanMenu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  
+    &times;</a>
+  
+    <a href="index.html">Anasayfa</a>
+    <a href="haberler.html">Haberler</a>
+  </div>
+  
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+  &#9776; Menü
+  </span>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("YanMenu").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("YanMenu").style.width = "0";
+  }
+  </script>
+    <header id="mobileMenu">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Haber</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                  </li>
+                    <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <header id="desktopMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a style="text-decoration: none;" href="index.html" title="Anasayfa" id="Logo">
+                        Haber
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <nav id="menü">
+                        <ul>
+                            <li class="active"><a href="">Home</a></li>
+                            <li> <select name="links" id="" size="1" onchange="window.location.href=this.value;" >
+                              <option value="">seçiniz</option>
+                              <option value="haberler.html">haberler</option>
+                              <option value="otomobil-haberleri.html">otomobil</option>
+                              <option value="dünya.html">Dünya</option>
+                              <option value="spor.html">Spor</option>
+                              <option value="elektroniik.html">Elektronik</option>
+                            </select>
+                          </li>
+                            </li>
+                            
+                          
+                            <form>
+                              <input type="text" autocomplete="off" name="searchTags" id="searchTags" placeholder="Aranacak Kelime" />
+                              <button type="submit" id="button" class="btn btn-primary">ara</button>
+                            </form>         
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <h1>Dönüştürülseydi, 767 milyon Euro gelir elde edilecekti</h1>
+    Eski elektronik eşyalar evlerde biriktiriliyor. Kimi bir gün lazım olur kullanırım diye düşünüyor. Kimi de atıkları nereye atacaklarını bilmediği için evde saklıyor. Durum böyle olunca da günlük hayatımızın vazgeçilmezleri içerisinde bulunan elektronik eşyalar bir süre sonra e-atık haline dönüşüyor ve adeta metal yığınları oluşturuyor. Japonya'daki Birleşmiş Milletler Üniversitesi, Uluslararası Telekomünikasyon Birliği ve Uluslararası Katı Atık Birliği tarafından küresel e-atık izleme raporu hazırlandı. Rapora göre, 2016 yılında dünya genelinde 44.7 milyon ton elektronik atık ortaya çıktı.
+    <img style="width: 500px;" src="data:image/jpeg;base64,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" alt=""><br>
+    Türkiye'de olanlar biriktirilse rapora göre yılda 767 milyon Euro gelir elde edilebilirdi. E-atık raporuna göre, dünya genelindeki elektronik atıkların sadece yüzde 20'si geri dönüşüme atılıyor. 2016'da dünya genelinde kullanım ömrü dolan cep telefonlarının ağırlığı 435 bin ton. En çok e-atık 7 milyon 211 bin ton ile Çin'de. İkinci sırada 6 milyon 295 bin ton ile ABD. Üçüncü Japonya 3 milyon 139 bin ton. Türkiye ise toplam 623 bin ton e-atık ile 177 ülkenin olduğu sıralamada 17. oldu. Türkiye'de kişi başı yıllık atık ise 8 kilo.
+
+
+    <br><br>
+
+    <h3>Yazar:Ozan Çetin</h3><br>
+<h3>Tarih:10/12/2022</h3>
+
+
+
+
+    <table border="0" cellSpacing="0" cellPadding="0" width="100%" id="table1">
+
+      <tr>
+     
+       <td vAlign="top" width="98%"><center>
+     
+       <table border="0" id="table2">
+     
+        <tr>
+     
+         <td><b>Bu sayfa hakkındaki yorumlar:</b>
+     
+         </td>
+     
+        </tr>
+     
+       </table>
+     
+       <center><br>
+     
+     &nbsp;<form onsubmit="return wsx_ywait();" method="post" name="wsx_yuyelik" action="http://kod.websitesi.gen.tr/sayfam/sc/y.php">
+     
+        <table id="table3">
+     
+         <tr>
+     
+          <td colSpan="20" align="left"><b>Bu sayfa hakkında yorum
+     
+          ekle:</b>
+     
+          </td>
+     
+         </tr>
+     
+         <tr>
+     
+          <td align="left">İsim
+     
+          </td>
+     
+          <td align="left"><input size="25" name="isim">
+     
+          </td>
+     
+         </tr>
+     
+         <tr>
+     
+          <td align="left">E-mail
+     
+          </td>
+     
+          <td align="left">
+     
+          <input size="25" name="mail" AUTOCOMPLETE="OFF">
+     
+          </td>
+     
+         </tr>
+     
+         <tr>
+     
+          <td>Mesajınız:</td>
+     
+          <td>
+     
+          <textarea style="WIDTH: 250px; HEIGHT: 100px" name="icerik" rows="1" cols="20"></textarea></td>
+     
+         </tr>
+     
+        </table>
+     
+        <input value="http://127.0.0.1:5500/index.html" type="hidden" name="">
+     
+        <input value="verdailesohbet.com" type="hidden" name="domain">
+     
+        <input value="30842" type="hidden" name="id">
+     
+        <input value="0" type="hidden" name="alt_id">
+     
+        <input value="0" type="hidden" name="alt_id1">
+     
+        <input value="index.htm" type="hidden" name="dosya_ismi">
+     
+        <input value="Yorum ekle" type="submit">
+     
+       </form>
+     
+       </center></center></td>
+     
+      </tr>
+     
+     </table>
+    
+    
+</body>
+</html>

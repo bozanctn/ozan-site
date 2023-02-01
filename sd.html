@@ -1,0 +1,70 @@
+<html>
+<head></head>
+<script language="JavaScript">
+ 
+var NS4 = (document.layers); // hangi browser?
+var IE4 = (document.all);
+ 
+var win = window; // pencere icinde aramak.
+var n = 0;
+ 
+function findInPage(str) {
+ 
+var txt, i, found;
+ 
+if (str == "")
+return false;
+ 
+if (NS4) {
+ 
+if (!win.find(str))
+while(win.find(str, false, true))
+n++;
+else
+n++;
+ 
+if (n == 0)
+alert("Bulunamadi.");
+}
+ 
+if (IE4) {
+txt = win.document.body.createTextRange();
+ 
+for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
+txt.moveStart("character", 1);
+txt.moveEnd("textedit");
+}
+ 
+if (found) {
+txt.moveStart("character", -1);
+txt.findText(str);
+txt.select();
+txt.scrollIntoView();
+n++;
+}
+ 
+else {
+if (n > 0) {
+n = 0;
+findInPage(str);
+}
+ 
+else
+alert("Bulunamadi.");
+}
+}
+ 
+return false;
+}
+ 
+</script>
+<body>
+  <form name="search" onSubmit="return findInPage(this.string.value);">
+    <input name="string" type="text" onChange="n = 0;">
+    <input type="submit" value="Sayfada Ara" name="submit">
+  </form>
+ 
+Bu alana sayfanızı yerleştirin..
+ 
+</body>
+</html>

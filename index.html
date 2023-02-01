@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.selcls { 
+    padding: 9px; 
+    border: solid 1px #517B97; 
+    outline: 0; 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CAD9E3), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #CAD9E3 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+
+    } 
+   
+</style>    
+</head>
+<script>
+        
+  function btnGo(){
+  
+    var search = document.getElementById("#searchBox").value;
+    window.location.href = "http://127.0.0.1:5500/bjk.html" + search;
+  
+  }
+
+  btngo()
+  
+</script>
+<body>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 60px; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1; 
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+    <script>
+     
+    </script>
+  
+  <div id="YanMenu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  
+    &times;</a>
+  
+    <a href="index.html">Anasayfa</a>
+    <a href="haberler.html">Haberler</a>
+  </div>
+  
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+  &#9776; Menü
+  </span>
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("YanMenu").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("YanMenu").style.width = "0";
+  }
+  </script>
+    <header id="desktopMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html" title="Anasayfa" id="Logo">
+                        Haber
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <nav id="menü">
+                        <ul>
+                            <li class="active"><a href="">Home</a></li>
+                                      <select onchange="window.location.href=this.value;">
+                                        <option value="haberler.html">Haberler</option>
+                                        <option value="otomobil-haberleri.html">Otomobil Haberleri</option>
+                                        <option value="dünya.html">Dünya Haberleri</option>
+                                        <option value="spor.html">Spor Haberleri</option>
+                                        <option value="elektroniik.html">Elektronik Haberleri</option>
+                                      </select>          
+                                      <li> <a class="btn btn-primary" href="giriş.html">Kayıt Ol/Giriş Yap</a> </li>
+                                     
+                                      <script type="text/javascript">
+                                        function handleSelect(elm)
+                                        {
+                                           window.location = elm.value+".html";
+                                        }
+                                      </script>
+                                    
+                                    <input type="text" autocomplete="off" name="searchTags" id="searchBox" placeholder="Aranacak Kelime" />
+                                    <button type="submit" id="button" id="searchBox" class="btn btn-primary">ara</button>
+                                    
+                            
+                          
+                            
+                                 
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn1.ntv.com.tr/gorsel/jRUl509rtEGwqdkDyS2u7g.jpg?width=1000&mode=both&scale=both&v=1671088521744" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>  Şık SUV T-roc için özel üretim Seri</h5>
+            <p><button class="btn btn-outline-primary"><a style="text-decoration: none;" href="özelüretim.html">troc için özel üretim seri geliyor detaylar haberde </a></button></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn1.ntv.com.tr/gorsel/CZcjsTkulkyJiEmbHwqfAg.jpg?width=660&mode=both&scale=both" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Otomobillere Zam Yolda</h5>
+            <p> <button class="btn btn-outline-primary"> <a style="text-decoration: none;" href="fiyatarttı.html">Otomobillere her zamanki gibi zam geliyor</a> </button></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.ntvspor.net/9a287fcb3c4d4a069a7e43069dedb32c.JPG?&w=1000" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>  Muslera Üzgün</h5>
+            <p><button class="btn btn-outline-primary" ><a style="text-decoration: none;" href="muslera.html">muslera maalubiyeti aldı</a> </button></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+   
+<section id="popüler">
+    <h1>Popüler</h1>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+    <a style="text-decoration: none;" href="fiyatarttı.html"> <button class="btn btn-outline-primary" > Fiyatlar giderek artıyor </button><img style="border-radius: 40px ;" class="foto2" src="https://cdn1.ntv.com.tr/gorsel/CZcjsTkulkyJiEmbHwqfAg.jpg?width=660&mode=both&scale=both" alt=""></a>
+        </div>
+        <div class="col-md-4">
+    <a style="text-decoration: none;" href="otomobil üretimi.html"> <button class="btn btn-outline-primary" > Passat Artık Yok  </button> <img class="foto1" style="border-radius: 40px ;" src="https://cdn1.ntv.com.tr/gorsel/SD4L36BEQ0OdZ3jhAi3SWg.jpg?width=660&mode=both&scale=both" alt=""></a>
+        </div>
+        <div class="col-md-4">
+    <a style="text-decoration: none;" href="özelüretim.html"> <button class="btn btn-outline-primary" >özel üretim troc </button>  <img class="foto3" style="border-radius: 40px ; margin-left: 10px;" src="https://cdn1.ntv.com.tr/gorsel/c9aBjfHNWUuZZLqUqjE-dw.jpg?width=1000&mode=both&scale=both&v=1671088521744" alt=""></a>
+        </div>
+        <div class="col-md-4">
+    <a style="text-decoration: none;" href="elektrikliarac.html"> <button class="btn btn-outline-primary" >çin elektrikli araç üretimi </button> <img style="border-radius: 40px ; margin-right: 10px;" class="foto4" src="https://cdn1.ntv.com.tr/gorsel/dtsOx9EaKkCEIRuvZBc9fw.jpg?width=660&mode=both&scale=both%22%22" alt=""></a>
+        </div>
+    </div>
+</div>
+
+   
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</body>
+</html>

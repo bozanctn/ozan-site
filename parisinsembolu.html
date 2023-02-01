@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parisin sembolü</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 60px; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+ 
+  
+  .sidenav a:hover {
+    color: #f1f1f1; 
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div id="YanMenu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  
+    &times;</a>
+  
+    <a href="index.html">Anasayfa</a>
+    <a href="haberler.html">Haberler</a>
+  </div>
+  
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+  &#9776; Menü
+  </span>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("YanMenu").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("YanMenu").style.width = "0";
+  }
+  </script>
+    <header id="mobileMenu">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Haber</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                  </li>
+                    <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <header id="desktopMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html" title="Anasayfa" id="Logo">
+                        Haber
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <nav id="menü">
+                        <ul>
+                            <li class="active"><a href="">Home</a></li>
+                                      <select onchange="window.location.href=this.value;">
+                                        <option value="haberler.html">Haberler</option>
+                                        <option value="otomobil-haberleri.html">Otomobil Haberleri</option>
+                                        <option value="dünya.html">Dünya Haberleri</option>
+                                        <option value="spor.html">Spor Haberleri</option>
+                                        <option value="elektroniik.html">Elektronik Haberleri</option>
+                                      </select>          
+                                      <script type="text/javascript">
+                                        function handleSelect(elm)
+                                        {
+                                           window.location = elm.value+".html";
+                                        }
+                                      </script>
+                                    
+                             
+                            
+                            
+                          
+                            
+                            
+                          
+                            <form>
+                                <input type="text" name="arayınız" id="" value="ara">
+                                <button class="btn btn-primary">ara</button>
+                            </form>         
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <h1>Paris'in sembol yapıları enerji tasarrufu için erken karartılıyor</h1><br>
+    <h2>Fransa'nın başkenti Paris'teki ünlü Eyfel Kulesi'nin ışıkları, Champs-Elysee (Şanzelize Caddesi) ve Louvre Müzesi önündeki piramidi aydınlatan ışıklar, enerji tasarrufu kapsamında 1 saat 15 dakika erken söndürülüyor.</h2><br>
+    <img style="width: 500px;" src="https://i4.hurimg.com/i/hurriyet/75/750x422/63b9592b4e3fe0253443daf1.jpg" alt=""><br>
+    Rusya’nın, Ukrayna’ya saldırıları nedeniyle Moskova'ya yaptırım uygulayan bazı Avrupa ülkelerine gazı kesmesinin ardından yaşanan Enerji Krizi sürüyor. Fransa'da krize karşı alınan tasarruf önlemleri uygulanmaya devam ediyor.
+
+Tasarruf adımları kapsamında başkent Paris'in sembolü Eyfel Kulesi'ndeki aydınlatmalar erken kapatılıyor. Enerji krizi öncesinde yerel saatle 01.00'e kadar aydınlatılan Eyfel Kulesi'nin ışıkları artık 23.45'te söndürülüyor. Paris'in en güzel caddesi olarak bilinen Champs-Elysee de (Şanzelize Caddesi) ışıkların 23.45'te kapatılmasıyla karanlığa gömülüyor. 
+<h3>Yazar:Ozan Çetin</h3><br>
+<h3>Tarih:10/04/2022</h3>
+
+
+<table border="0" cellSpacing="0" cellPadding="0" width="100%" id="table1">
+
+  <tr>
+ 
+   <td vAlign="top" width="98%"><center>
+ 
+   <table border="0" id="table2">
+ 
+    <tr>
+ 
+     <td><b>Bu sayfa hakkındaki yorumlar:</b>
+ 
+     </td>
+ 
+    </tr>
+ 
+   </table>
+ 
+   <center><br>
+ 
+ &nbsp;<form onsubmit="return wsx_ywait();" method="post" name="wsx_yuyelik" action="http://kod.websitesi.gen.tr/sayfam/sc/y.php">
+ 
+    <table id="table3">
+ 
+     <tr>
+ 
+      <td colSpan="20" align="left"><b>Bu sayfa hakkında yorum
+ 
+      ekle:</b>
+ 
+      </td>
+ 
+     </tr>
+ 
+     <tr>
+ 
+      <td align="left">İsim
+ 
+      </td>
+ 
+      <td align="left"><input size="25" name="isim">
+ 
+      </td>
+ 
+     </tr>
+ 
+     <tr>
+ 
+      <td align="left">E-mail
+ 
+      </td>
+ 
+      <td align="left">
+ 
+      <input size="25" name="mail" AUTOCOMPLETE="OFF">
+ 
+      </td>
+ 
+     </tr>
+ 
+     <tr>
+ 
+      <td>Mesajınız:</td>
+ 
+      <td>
+ 
+      <textarea style="WIDTH: 250px; HEIGHT: 100px" name="icerik" rows="1" cols="20"></textarea></td>
+ 
+     </tr>
+ 
+    </table>
+ 
+    <input value="http://127.0.0.1:5500/index.html" type="hidden" name="">
+ 
+    <input value="verdailesohbet.com" type="hidden" name="domain">
+ 
+    <input value="30842" type="hidden" name="id">
+ 
+    <input value="0" type="hidden" name="alt_id">
+ 
+    <input value="0" type="hidden" name="alt_id1">
+ 
+    <input value="index.htm" type="hidden" name="dosya_ismi">
+ 
+    <input value="Yorum ekle" type="submit">
+ 
+   </form>
+ 
+   </center></center></td>
+ 
+  </tr>
+ 
+ </table>
+
+
+</body>
+</html>
